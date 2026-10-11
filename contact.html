@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Vida Psychotherapy, Counselling and Vocational Services to arrange an initial consultation."
+    />
+    <title>Contact | Vida Psychotherapy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand" aria-label="Vida home">
+          <span class="brand-mark">V</span>
+          <span class="brand-text">
+            <strong>VIDA</strong>
+            <small>Psychotherapy</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner narrow-center">
+          <div class="page-hero-copy text-center">
+            <p class="eyebrow">Contact</p>
+            <h1>Start your next chapter with support that feels right.</h1>
+            <p class="lead">
+              If you are looking for compassionate care or practical guidance, we would be happy to speak with you.
+            </p>
+            <div class="hero-actions center-actions">
+              <a class="button primary" href="https://www.janeapp.com/" target="_blank" rel="noreferrer">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <h2>Let’s talk.</h2>
+            <p>
+              Reach out to arrange a consultation and learn more about how support could fit your needs.
+            </p>
+
+            <div class="contact-details">
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+14168794737">+1 (416) 879-4737</a>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@vidapsychotherapy.com">hello@vidapsychotherapy.com</a>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon–Fri: 9:00 AM – 5:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Enquiry type
+              <select name="service">
+                <option>Psychotherapy</option>
+                <option>Counselling</option>
+                <option>Vocational Support</option>
+                <option>General Enquiry</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell us how we can help"></textarea>
+            </label>
+            <button type="submit" class="button primary">Send Enquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Vida Psychotherapy, Counselling and Vocational Services</p>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
