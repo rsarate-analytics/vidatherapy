@@ -22,19 +22,13 @@ if (navToggle && mainNav) {
 
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const button = contactForm.querySelector('button');
-    if (button) {
-      const originalText = button.textContent;
-      button.textContent = 'Thank you!';
-      button.disabled = true;
+  const successMessage = contactForm.querySelector('.success-message');
 
-      setTimeout(() => {
-        button.textContent = originalText;
-        button.disabled = false;
-        contactForm.reset();
-      }, 2000);
+  contactForm.addEventListener('submit', () => {
+    if (successMessage) {
+      successMessage.classList.add('visible');
     }
   });
 }
+
+

@@ -82,14 +82,24 @@
             </div>
           </div>
 
-          <form class="contact-form">
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden-field">
+              <label>
+                Don’t fill this out if you’re human:
+                <input name="bot-field" />
+              </label>
+            </p>
+            <div class="success-message" aria-live="polite">
+              Thank you for your inquiry. We will be in touch soon.
+            </div>
             <label>
               Full name
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="name" placeholder="Your name" required />
             </label>
             <label>
               Email address
-              <input type="email" name="email" placeholder="you@example.com" />
+              <input type="email" name="email" placeholder="you@example.com" required />
             </label>
             <label>
               Enquiry type
@@ -102,7 +112,7 @@
             </label>
             <label>
               Message
-              <textarea name="message" rows="5" placeholder="Tell us how we can help"></textarea>
+              <textarea name="message" rows="5" placeholder="Tell us how we can help" required></textarea>
             </label>
             <button type="submit" class="button primary">Send Enquiry</button>
           </form>

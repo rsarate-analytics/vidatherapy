@@ -603,6 +603,28 @@ h2 {
   color: var(--text);
 }
 
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.success-message {
+  display: none;
+  background: rgba(45, 122, 90, 0.08);
+  border: 1px solid rgba(45, 122, 90, 0.18);
+  color: var(--primary-dark);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.success-message.visible {
+  display: block;
+}
+
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
