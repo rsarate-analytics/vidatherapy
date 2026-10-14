@@ -262,6 +262,11 @@ h2 {
 
 .page-hero-copy {
   max-width: 620px;
+  margin-inline: auto;
+}
+
+.page-hero-copy h1 {
+  margin-inline: auto;
 }
 
 .profile-spotlight {
@@ -588,10 +593,62 @@ h2 {
   margin: 0 auto 2.5rem;
 }
 
+.section-heading > p:last-child {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.care-options-section {
+  padding-top: 2rem;
+}
+
+.care-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.care-option-card {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.care-option-card h3 {
+  margin: 0.8rem 0 0.55rem;
+}
+
+.care-option-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.care-option-label {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.care-option-card.coming-soon {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .service-card {
@@ -600,6 +657,10 @@ h2 {
   border-radius: 24px;
   padding: 1.6rem;
   box-shadow: var(--shadow);
+}
+
+.service-card:last-child:nth-child(3n + 1) {
+  grid-column: 2;
 }
 
 .icon {
@@ -751,6 +812,14 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .service-card:last-child:nth-child(3n + 1) {
+    grid-column: auto;
+  }
+
+  .care-options-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -798,5 +867,9 @@ h2 {
 
   .hero-actions {
     flex-direction: column;
+  }
+
+  .care-options-grid {
+    grid-template-columns: 1fr;
   }
 }
